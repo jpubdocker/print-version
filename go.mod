@@ -1,3 +1,3 @@
-module github.com/gihyodocker/print-version
+module github.com/jpubdocker/print-version
 
 go 1.20
