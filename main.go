@@ -10,7 +10,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/gihyodocker/print-version/pkg/version"
+	"github.com/jpubdocker/print-version/pkg/version"
 )
 
 func main() {
