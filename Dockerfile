@@ -6,7 +6,7 @@ COPY . .
 RUN GOARCH=$TARGETARCH make build
 
 FROM gcr.io/distroless/base-debian11:debug
-LABEL org.opencontainers.image.source=https://github.com/gihyodocker/print-version
+LABEL org.opencontainers.image.source=https://github.com/jpubdocker/print-version
 
 COPY --from=build /go/src/github.com/jpubdocker/print-version/bin/print-version /usr/local/bin/
 COPY --from=build /go/src/github.com/jpubdocker/print-version/live.txt /var/tmp/
