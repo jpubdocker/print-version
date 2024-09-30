@@ -6,7 +6,7 @@ ifndef GOOS
 	GOOS := $(shell go env GOOS)
 endif
 
-REPOSITORY := github.com/gihyodocker/print-version
+REPOSITORY := github.com/jpubdocker/print-version
 VERSION_PACKAGE := "$(REPOSITORY)/pkg/version"
 LDFLAG_VERSION := "$(VERSION_PACKAGE).version"
 
